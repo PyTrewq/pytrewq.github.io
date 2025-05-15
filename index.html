@@ -1,0 +1,44 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <style type="text/css" id="operaUserStyle"></style><style type="text/css"></style></head>
+  <body>
+<div id="warning-overlay" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgb(0, 0, 0);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;">
+    <h2>⚠️ Warning ⚠️</h2>
+    <p style="max-width:400px;text-align:center;">
+      This site may contains sensitive or explicit content.<br>
+      By entering, you confirm that you have the majority in your country.
+    </p>
+    <button id="continue-btn" style="margin-top:20px;padding:10px 30px;font-size:1.1em;cursor:pointer;">Continue | I'm 18+</button>
+  </div>
+    <div class="card-container">
+		<!-- <span class="pro">PRO</span> -->
+        <img class="round" src="https://cdn.discordapp.com/attachments/1096076055929950228/1314289329258102866/image.png?ex=6826d392&is=68258212&hm=15a73efbbb23421e00752b5c7279c4e342ff60f48b35e68628f017065642b7e2&" alt="user" />
+        <h3>P-Gallery</h3>
+        <h6>DISCORD SERVER</h6>
+        <p>Watch videos anonymously for free <br/> with no history, cookies or trackers</p>
+
+       <div class="buttons">
+          <a href="https://sythm-studio.fr/services" class="button">JOIN</a>
+          <a href="https://forms.gle/BsdFRgL5A9AatKKUA" target="_blank" class="button secondary">👑 PREMIUM</a>
+        </div>
+        <div class="skills">
+            <h6>Content</h6>
+            <ul>
+                <li>1500+ GIFs</li>
+                <li>6000+ Videos</li>
+                <li>30+ Category</li>
+            </ul>
+        </div>
+    </div>
+</body>
+ <script>
+    document.getElementById('continue-btn').onclick = function() {
+      document.getElementById('warning-overlay').style.display = 'none';
+      document.querySelector('.card-container').style.display = '';
+    };
+  </script>
+</html>            
